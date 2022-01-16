@@ -150,3 +150,13 @@ $(document).ready(function () {
 
 
 });
+
+
+function download(id) {
+    var imagePath = document.getElementById(id).value;
+    let fileName = getFileName(imagePath);
+    saveAs(imagePath, fileName);
+}
+function getFileName(str) {
+      return str.substring(str.lastIndexOf('/') + 1)
+  }

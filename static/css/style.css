@@ -1,22 +1,3 @@
-/*
-Table of content
-
-1. Default css
-2. Preloader css
-3. Navbar css
-4. Banner area css
-5. About area css
-6. Services area css
-7. Portfolio starts css
-8. Testimonial area css
-9. Invitation area css
-10. Contact area css
-11. Footer area css
-
-*/
-
-/*--- 1. Default CSS Starts ---*/
-
 body {
     width: 100%;
     height: 100%;
@@ -171,17 +152,6 @@ h6 {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
-/*--- 1. Default CSS Ends ---*/
-
-/*-------------- 2. Preloader css starts ---------------*/
-
-/*  */
-
-/*---------- preloader css ends -------------*/
-
-/*--- 3. Navbar css starts ---*/
-
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -267,11 +237,6 @@ h6 {
         color: #fff;
     }
 }
-
-/*--- 3. Navbar css ends ---*/
-
-/*--- 4. Banner area css starts ---*/
-
 .banner-area {
     height: 100%;
     background: #222 url("../images/back.png") no-repeat fixed 100% 100% / cover;
@@ -317,11 +282,6 @@ h6 {
     font-size: 14px;
 
 }
-
-/*--- 4. Banner area css ends ---*/
-
-/*--- 5. About area css starts ---*/
-
 .line {
     height: 2px;
     background: #FF0000;
@@ -360,10 +320,6 @@ h6 {
     font-size: 14px;
 
 }
-
-/*--- 5. About area ends ---*/
-
-/*--- 6. Services area css starts ---*/
 .single-service{
     margin-bottom: 30px;
 }
@@ -391,15 +347,6 @@ h6 {
 .single-service:hover h2 {
     color: #FF0000;
 }
-/* .servimage{
-    height: 120px;
-    width: 160px;
-} */
-
-/*--- 6. services area ends ---*/
-
-/*--- 7. Portfolio starts css starts---*/
-
 .gallery-items {
     position: relative;
 }
@@ -500,12 +447,6 @@ h6 {
     letter-spacing: .05em;
     font-weight: 300;
 }
-
-/*---portfolio ends---*/
-
-/*---8. Testimonial area css starts---*/
-
-
 .client-img {
     width: 100px;
     height: 100px;
@@ -556,10 +497,6 @@ h6 {
     background: #000000;
 }
 
-/*---8. Testimonial area css ends---*/
-
-/*--- 9. Invitation area css starts ---*/
-
 .invitation-area{
     background: #333333;
     color: #ffffff;
@@ -591,11 +528,6 @@ h6 {
     font-size: 14px;
 }
 
-/*--- invitation area ends ---*/
-
-/*-------------10. Contact area css starts -------------*/
-
-
 .contact-area .form-control{
     border: none;
     border-bottom: 2px solid #a2a2a2;
@@ -620,12 +552,6 @@ h6 {
     text-transform: uppercase;
     font-weight: 600;
 }
-
-/*------------- Contact area ends -------------*/
-
-/*--------------11. Footer area css starts -------------*/
-
-
 .footer-area {
     background: #232323;
     padding: 30px 0;
@@ -637,4 +563,3 @@ h6 {
     color: #FF0000;
 }
 
-/*--------------- Footer area ends -------------*/

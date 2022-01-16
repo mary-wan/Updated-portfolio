@@ -24,7 +24,7 @@ class About(models.Model):
 
 class Service(models.Model): 
     # image = models.ImageField(upload_to="service",null=True,blank=True)
-    image= ImageField(manual_crop="",null=True,blank=True)
+    image= models.ImageField(upload_to='images/',null=True,blank=True)
     name = models.CharField(max_length=200,verbose_name="Service Name",null=True,blank=True)
     description = models.TextField(verbose_name="Service Name",null=True,blank=True)
 
@@ -34,7 +34,7 @@ class Service(models.Model):
 
 class RecentWork(models.Model):
     title = models.CharField(max_length=300,verbose_name = "Work title ")
-    image = models.ImageField(upload_to="work")
+    image = models.ImageField(upload_to='images/')
     url = models.CharField(max_length=500,null=True,blank=True)
     
 
@@ -45,7 +45,7 @@ class RecentWork(models.Model):
 class Client(models.Model):
     name = models.CharField(max_length = 200,verbose_name= "Client Name")
     description = models.TextField(verbose_name= "Client say")
-    image = models.ImageField(upload_to="client",default="default.png")
+    image = models.ImageField(upload_to='images/',default="default.png")
 
     def __str__(self):
         return self.name

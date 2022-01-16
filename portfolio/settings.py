@@ -14,6 +14,9 @@ import os
 import django_heroku
 import dj_database_url
 from decouple import config,Csv
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
@@ -73,6 +76,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary',
 ]
 UPLOADCARE = {
     'pub_key': 'dcf8fb00a92a3751767a',
@@ -165,8 +169,8 @@ STATICFILES_DIRS = (
 )
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = '/media/'
-MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
@@ -178,3 +182,10 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dzhxp777b',
+    'API_KEY': '939366662997374',
+    'API_SECRET': 'NyVFQzHFPKnSIEYqKPbmu9FSwms',
+}
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
